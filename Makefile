@@ -4,7 +4,7 @@ link_flags = $(flags) -c
 exe_file = game
 
 $(exe_file): location.o event.o pokecenter.o cave.o pokemon.o fire_type.o water_type.o grass_type.o nothing.o
-	$(CC) $(flags) driver.cpp -o $(exe_file) location.o event.o pokecenter.o cave.o pokemon.o fire_type.o water_type.o grass_type.o nothing.o
+	$(CC) $(flags) main.cpp -o $(exe_file) location.o event.o pokecenter.o cave.o pokemon.o fire_type.o water_type.o grass_type.o nothing.o
 
 location.o: location.cpp
 	$(CC) $(link_flags) location.cpp
